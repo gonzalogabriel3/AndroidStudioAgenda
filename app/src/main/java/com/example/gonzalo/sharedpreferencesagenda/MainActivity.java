@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences preferencias=getSharedPreferences("agenda", Context.MODE_PRIVATE);
         SharedPreferences.Editor Obj_editor=preferencias.edit();
 
+        //Agrego los datos al archivo
         Obj_editor.putString(nombre, datos);
         Obj_editor.commit();
 
